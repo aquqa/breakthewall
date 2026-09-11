@@ -23,3 +23,4 @@ a.cf.090227.xyz:443#cf.090227
 mfa.gov.ua:443#乌克兰
 www.shopify.com:443#shopify
 store.ubi.com:443#ubi
+cmin2.pjq.cc.cd#cmin2
