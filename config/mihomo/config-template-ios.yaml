@@ -131,7 +131,6 @@ proxy-groups:
     <<: *proxies-common
 
 rules:
-  - PROCESS-NAME,cfdata-windows-amd64.exe,DIRECT
   - GEOSITE,private,DIRECT
   - GEOIP,private,DIRECT,no-resolve
   - GEOSITE,github,🧩 其他流量
