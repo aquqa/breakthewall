@@ -111,6 +111,8 @@ proxy-groups:
     <<: *proxies-common
   - name: 🎵 TikTok
     <<: *proxies-common
+  - name: ▶️ YouTube
+    <<: *proxies-common
   - name: 🔍 Google
     <<: *proxies-common
   - name: ☁️ OneDrive
@@ -129,6 +131,7 @@ proxy-groups:
     <<: *proxies-common
 
 rules:
+  - PROCESS-NAME,cfdata-windows-amd64.exe,DIRECT
   - GEOSITE,private,DIRECT
   - GEOIP,private,DIRECT,no-resolve
   - GEOSITE,github,🧩 其他流量
@@ -137,6 +140,7 @@ rules:
   - GEOSITE,okx,🪙 交易所
   - GEOSITE,category-ai-!cn,🤖 AI
   - GEOSITE,tiktok,🎵 TikTok
+  - GEOSITE,youtube,▶️ YouTube
   - GEOSITE,google,🔍 Google
   - GEOSITE,onedrive,☁️ OneDrive
   - GEOSITE,microsoft,🪟 Microsoft
