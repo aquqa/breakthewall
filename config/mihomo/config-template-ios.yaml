@@ -38,7 +38,7 @@ dns:
     - "rule-set:fakeip-filter"
 
   default-nameserver:
-  - "tls://223.5.5.5:853"
+  - "tls://1.12.12.12:853"
   - "tls://223.6.6.6:853"
   nameserver-policy:
     "geosite:geolocation-!cn":
@@ -46,14 +46,14 @@ dns:
       - "https://8.8.8.8/dns-query"
   nameserver:
     - "https://doh.pub/dns-query"
-    - "https://dns.alidns.com/dns-query"
+    - "https://1.12.12.12/dns-query"
   direct-nameserver:
     - "https://doh.pub/dns-query"
-    - "https://dns.alidns.com/dns-query"
+    - "https://1.12.12.12/dns-query"
   direct-nameserver-follow-policy: false
   proxy-server-nameserver:
     - "https://doh.pub/dns-query"
-    - "https://dns.alidns.com/dns-query"
+    - "https://1.12.12.12/dns-query"
 
 provider-common: &provider-common
   type: http
