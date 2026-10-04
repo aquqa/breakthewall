@@ -125,12 +125,11 @@ proxy-groups:
     <<: *proxies-common
   - name: 📺 BiliBili
     <<: *proxies-common
-  - name: 🛡️ AD-Block
-    <<: *proxies-common
   - name: 🧩 其他流量
     <<: *proxies-common
 
 rules:
+  - AND,((GEOSITE,youtube),(NETWORK,UDP),(DST-PORT,443)),REJECT
   - GEOSITE,private,DIRECT
   - GEOIP,private,DIRECT,no-resolve
   - GEOSITE,github,🧩 其他流量
@@ -146,7 +145,6 @@ rules:
   - GEOSITE,apple,🍎 Apple
   - GEOSITE,bilibili,📺 BiliBili
   - GEOSITE,steam@cn,🇨🇳 China
-  - GEOSITE,category-ads-all,🛡️ AD-Block
   - GEOSITE,cn,🇨🇳 China
   - GEOIP,CN,🇨🇳 China,no-resolve
   - MATCH,🧩 其他流量

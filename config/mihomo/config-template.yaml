@@ -131,6 +131,7 @@ proxy-groups:
     <<: *proxies-common
 
 rules:
+  - AND,((GEOSITE,youtube),(NETWORK,UDP),(DST-PORT,443)),REJECT
   - PROCESS-NAME,cfdata-windows-amd64.exe,DIRECT
   - GEOSITE,private,DIRECT
   - GEOIP,private,DIRECT,no-resolve

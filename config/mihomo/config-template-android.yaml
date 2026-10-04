@@ -131,6 +131,7 @@ proxy-groups:
     <<: *proxies-common
 
 rules:
+  - AND,((GEOSITE,youtube),(NETWORK,UDP),(DST-PORT,443)),REJECT
   - PROCESS-NAME,com.openai.chatgpt,🤖 AI
   - PROCESS-NAME,com.ss.android.ugc.trill,🎵 TikTok
   - PROCESS-NAME,com.zhiliaoapp.musically,🎵 TikTok
