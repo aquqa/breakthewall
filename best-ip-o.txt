@@ -24,6 +24,7 @@
 104.18.19.163:443#GB-LHR-AS13335-22.23MB/s-⚡
 104.18.21.219:443#GB-LHR-AS13335-2.28MB/s-D
 104.18.27.130:443#GB-LHR-AS13335-27.76MB/s-D
+172.64.52.161:443#JP
 mfa.gov.ua:443#乌克兰
 www.shopify.com:443#shopify
 store.ubi.com:443#ubi
